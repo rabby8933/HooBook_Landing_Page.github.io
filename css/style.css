@@ -691,30 +691,12 @@ footer .footer-bottom .social-icons ul li i:hover {
   .navbar-nav{margin: 20px 0;}
   .nav-link {text-align: center; padding-left: 0 !important;}
 
-  .hero-section h1 {font-size: 38px;
-    margin: -114px 0 0 0;
-    text-align: left;
-    line-height: 58px;
-    padding: 50px 10px 0;}
+  .hero-section h1 {font-size: 38px;margin: -114px 0 0 0;text-align: left;line-height: 58px;padding: 50px 100px 0 10px;}
   .hero-section h1 span {font-size: 40px;}
   .hero-section{text-align: center; padding: 50px 0;}
   .hero-section .left-p {font-size: 16px; padding: 10px 10px 30px; text-align: left;}
-  .hero-section .getStarted {
-     position: relative;
-    top: 37px;
-    left: 63%;
-}
-  .hero-section .getStarted .inner {
-    padding: 42px 0 0 0px;
-}
-
-
-
-
-
-
-
-
+  .hero-section .getStarted {position: relative;top: 37px;left: 63%;}
+  .hero-section .getStarted .inner {padding: 42px 0 0 0px;}
 
   .features-1 .item {align-items: center; flex-direction: column;}
   .features-1 .text p {padding-bottom: 25px; padding-left: 0;}
@@ -727,7 +709,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   .features-2 .icon .fa-solid {padding-left: 16px;}
   .features-2 .item {width: auto; height: 130px; margin: 35px auto 0;}
   .features-2 .btn-getStarted {display: block; margin: 0 auto 25px;}
- 
+
   .features-3 {padding: 70px 0;}
   .features-3 .payPal {position: relative; top: 0;left: 0%; transform: translateX(-50%);}
   .features-3 .transaction {position: relative; top: 0; left: 0%; transform: translateX(-50%);}
