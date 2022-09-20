@@ -806,7 +806,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   .hero-section .hero-left-4{ top: 64.5%;left: 50%; margin-left: -200.5px;}
   .hero-section .hero-left-5{top: 80.6%; right: 5%;}
   .hero-section .hero-left-6{top: 84%; left: 3%;}
-  .hero-section .hero-left-7{top: 86%; left: 50%; margin-left: -212.5px; z-index: -1;}
+  .hero-section .hero-left-7{top: 86%;left: 50%;width: 94%;margin-left: -47%;z-index: -1;}
 
   .features-1 .item {align-items: center; flex-direction: column;}
   .features-1 .text p {padding-bottom: 25px; padding-left: 0;}
@@ -852,7 +852,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   .service {padding: 50px 0; text-align: center;}
   .service .content {padding-left: 0;}
   .service p {padding: 0 20px 40px;}
-  .service h1 {font-size: 32px; margin-bottom: 0; line-height: 42px;}
+  .service h1 {font-size: 32px; margin-bottom: 0; line-height: 42px; padding: 0 5px;}
 
   footer {padding: 30px 0 0; text-align: center; align-items: center;}
   footer .usefull-links, footer .community, footer .partner {padding-left: 0; margin-top: 35px;}
@@ -861,7 +861,6 @@ footer .footer-bottom .social-icons ul li i:hover {
   footer .footer-bottom .social-icons ul li {padding: 10px 15px 0;}
   footer .footer-bottom {margin-top: 30px; padding: 30px 0;}
   footer .col-lg-2 ul li a {line-height: 30px;}
-  footer h5 {margin-bot
 
   @keyframes transaction{0%{transform: translateY(0);} 50%{transform: translateY(7px);} 100%{transform: translateY(0);}}
   @keyframes scanCradit{0%{transform: translateY(0);} 50%{transform: translateY(7px);} 100%{transform: translateY(0);}}
