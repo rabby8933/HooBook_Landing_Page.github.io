@@ -50,6 +50,10 @@ header {
   color: #fff;
   font-size: 22px;
 }
+.navbar-brand img{
+  width: 15.6%;
+  margin-right: 8px;
+}
 .navbar-brand:hover {
   color: #fff;
 }
@@ -180,6 +184,7 @@ header {
 /* Hero left Images */
 .hero-section .hero-left-1{
   position: absolute;
+  width: 101px;
   top: 8%;
   right: 40%;
   animation: circle 3s ease infinite;
@@ -187,9 +192,10 @@ header {
 }
 .hero-section .hero-left-2{
   position: absolute;
+  width: 401px;
   top: 12.9%;
   right: 21.5%;
-  /* z-index: 2; */
+  z-index: 2;
   animation: rectangle1 3s ease infinite;
   transition: all .3s;
 }
@@ -200,6 +206,7 @@ header {
 }
 .hero-section .hero-left-3{
   position: absolute;
+  width: 401px;
   top: 24%;
   right: 21.5%;
   z-index: 1;
@@ -213,6 +220,7 @@ header {
 }
 .hero-section .hero-left-4{
   position: absolute;
+  width: 401px;
   top: 36%;
   right: 21.5%;
   animation: rectangle3 3s ease infinite;
@@ -226,6 +234,7 @@ header {
 }
 .hero-section .hero-left-5{
   position: absolute;
+  width: 68px;
   top: 59%;
   right: 21%;
   animation: circle 3s ease infinite;
@@ -233,6 +242,7 @@ header {
 }
 .hero-section .hero-left-6{
   position: absolute;
+  width: 32px;
   top: 68%;
   right: 40.6%;
   animation: circle 3s ease infinite;
@@ -245,6 +255,7 @@ header {
 }
 .hero-section .hero-left-7{
   position: absolute;
+  width: 558px;
   top: 72%;
   right: 13.2%;
 }
@@ -363,6 +374,7 @@ header {
 }
 .features-3 .payPal {
   position: absolute;
+  width: 282px;
   left: 28%;
   top: 9%;
   z-index: 1;
@@ -376,6 +388,7 @@ header {
 }
 .features-3 .transaction {
   position: absolute;
+  width: 335px;
   left: 17%;
   top: 35%;
   animation: transaction 3s ease infinite;
@@ -403,6 +416,9 @@ header {
   50%{transform: scale(1.03);}
   100%{transform: scale(1);}
 }
+.payment-success img {
+  width: 24px;
+}
 .payment-success p {
   font-weight: 500;
   font-size: 14px;
@@ -418,6 +434,9 @@ header {
 }
 .right-content {
   padding-left: 77px;
+}
+.downloadStores li img {
+  width: 26%;
 }
 .downloadStores li {
   display: inline;
@@ -454,7 +473,8 @@ header {
 }
 .card-deal .circle-1 {
   position: absolute;
-  top: 14%;
+  width: 382px;
+  top: 16%;
   right: 23%;
   animation: circle-1 3s ease infinite;
   transition: all .3s;
@@ -466,7 +486,8 @@ header {
 }
 .card-deal .circle-2 {
   position: absolute;
-  top: 25%;
+  width: 255px;
+  top: 27%;
   right: 26.3%;
   animation: circle-2 3s ease infinite;
   transition: all .3s;
@@ -478,7 +499,8 @@ header {
 }
 .card-deal .circle-3 {
   position: absolute;
-  top: 35.5%;
+  width: 125px;
+  top: 37.5%;
   right: 29.7%;
   animation: circle-3 3s ease infinite;
   transition: all .3s;
@@ -490,8 +512,9 @@ header {
 }
 .card-deal .scanCradit {
   position: absolute;
+  width: 192px;
   right: 37%;
-  top: 25%;
+  top: 27%;
   animation: scanCradit 3s ease infinite;
   transition: all .3s;
 }
@@ -502,8 +525,9 @@ header {
 }
 .card-deal .onlineAnalysis {
   position: absolute;
+  width: 256px;
   right: 18%;
-  top: 13%;
+  top: 15%;
   animation: onlineAnalysis 3s ease infinite;
   transition: all .3s;
 }
@@ -514,8 +538,9 @@ header {
 }
 .card-deal .payMethod {
   position: absolute;
+  width: 262px;
   right: 26%;
-  top: 64%;
+  top: 66%;
   animation: payMethod 3s ease infinite;
   transition: all .3s;
 }
@@ -618,6 +643,7 @@ header {
   align-items: center;
 }
 .branding .brand img {
+  width: 195px;
   cursor: pointer;
   display: block;
   margin: auto;
@@ -774,13 +800,13 @@ footer .footer-bottom .social-icons ul li i:hover {
   .hero-section .left-p {font-size: 16px; padding: 10px 10px 30px; text-align: left;}
   .hero-section .getStarted {position: relative;top: 116px;left: 62%;}
   .hero-section .getStarted .iinner {padding: 40px 0 0 0px;}
-  .hero-section .hero-left-1{top: 48%;left: 9%;}
-  .hero-section .hero-left-2{width: 90%;top: 55%;left: 50%;margin-left: -168.75px;}
-  .hero-section .hero-left-3{width: 90%;top: 61.5%;left: 50%;margin-left: -168.75px;}
-  .hero-section .hero-left-4{width: 90%;top: 67.5%;left: 50%;margin-left: -168.75px;}
-  .hero-section .hero-left-5{top: 80.6%;right: 5%;}
-  .hero-section .hero-left-6{top: 84%;left: 3%;}
-  .hero-section .hero-left-7{width: 94%;top: 86%;left: 50%;margin-left: -189.5px;z-index: -1;}
+  .hero-section .hero-left-1{top: 46%;left: 9%;}
+  .hero-section .hero-left-2{width: 95%; top: 52%;left: 50%; margin-left: -178.125px;}
+  .hero-section .hero-left-3{width: 95%; top: 58.5%;left: 50%; margin-left: -178.125px;}
+  .hero-section .hero-left-4{width: 95%; top: 64.5%;left: 50%; margin-left: -178.125px;}
+  .hero-section .hero-left-5{top: 80.6%; right: 5%;}
+  .hero-section .hero-left-6{top: 84%; left: 3%;}
+  .hero-section .hero-left-7{top: 86%; left: 50%; margin-left: -187.5px; z-index: -1;}
 
   .features-1 .item {align-items: center; flex-direction: column;}
   .features-1 .text p {padding-bottom: 25px; padding-left: 0;}
@@ -799,7 +825,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   .features-3 .transaction {position: relative; top: -10px; left: 0%; transform: translateX(-50%);}
   .features-3 h2 {font-size: 32px; padding: 18px;}
   .features-3 .left-p {padding: 0 20px 25px;}
-  .payment-success {position: relative; top: 35px; left: 50%; transform: translateX(-50%); animation: none;}
+  .payment-success {position: relative; top: 35px; left: 50%; margin-left: -162px;}
   .right-content {padding-left: 0; padding-top: 100px; text-align: center;}
   .downloadStores{text-align: center;}
   
@@ -837,9 +863,9 @@ footer .footer-bottom .social-icons ul li i:hover {
   footer .col-lg-2 ul li a {line-height: 30px;}
   footer h5 {margin-bottom: 12px;}
 
-  @keyframes transaction{0%{transform: translateY(0);}50%{transform: translateY(7px);}100%{transform: translateY(0);}}
-  @keyframes scanCradit{0%{transform: translateY(0);}50%{transform: translateY(7px);}100%{transform: translateY(0);}}
-  @keyframes payMethod{0%{transform: scale(1);}50%{transform: scale(1.02);}100%{transform: scale(1);}}
-  @keyframes onlineAnalysis{0%{transform: translateY(0);}50%{transform: translateY(-7px);}100%{transform: translateY(0);}}
-  @keyframes payMethod{0%{transform: scale(1);}50%{transform: scale(1.02);}100%{transform: scale(1);}}
+  @keyframes transaction{0%{transform: translateY(0);} 50%{transform: translateY(7px);} 100%{transform: translateY(0);}}
+  @keyframes scanCradit{0%{transform: translateY(0);} 50%{transform: translateY(7px);} 100%{transform: translateY(0);}}
+  @keyframes payMethod{0%{transform: scale(1);} 50%{transform: scale(1.02);} 100%{transform: scale(1);}}
+  @keyframes onlineAnalysis{0%{transform: translateY(0);} 50%{transform: translateY(-7px);} 100%{transform: translateY(0);}}
+  @keyframes payMethod{0%{transform: scale(1);} 50%{transform: scale(1.02);} 100%{transform: scale(1);}}
 }
