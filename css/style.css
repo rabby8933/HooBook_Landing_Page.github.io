@@ -632,6 +632,17 @@ header {
   line-height: 24px;
   opacity: 0.5;
 }
+.testimonial .owl-carousel .owl-item.active.center .quete {
+  background-image: url(../assets/queteHover.png);
+}
+.testimonial .owl-carousel .owl-item.active.center .content {
+  background: linear-gradient(144.39deg,#ffffff -278.56%,#6d6d6d -78.47%,#11101d 91.61%);
+  transform: scale(1.1);
+  z-index: 100;
+}
+.owl-carousel .owl-stage-outer{
+  padding: 50px 0;
+}
 
 /********************** 
   Branding section CSS
@@ -816,7 +827,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   .features-2 {padding: 70px 0;}
   .features-2 h2 {font-size: 32px; padding: 20px 0; text-align: center;}
   .features-2 .left-p {padding: 0 25px 25px; text-align: center;}
-  .features-2 .icon .fa-solid {padding-left: 14px;}
+  .features-2 .icon .fa-solid {padding-left: 16px;}
   .features-2 .item {width: auto; margin: 25px auto 0;}
   .features-2 .btn-getStarted {display: block; margin: 0 auto 40px;}
 
@@ -845,6 +856,9 @@ footer .footer-bottom .social-icons ul li i:hover {
   .about-us p {padding-right: 0; padding-top: 20px; line-height: 168%;}
 
   .testimonial {padding: 90px 0 70px;}
+  .testimonial .owl-carousel .owl-item.active.center .content {
+  transform: none;
+}
 
   .branding {padding: 40px 0;}
   .branding .brand {margin: 20px 0;}
