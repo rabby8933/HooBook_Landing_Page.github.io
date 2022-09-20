@@ -44,7 +44,7 @@ header {
   top: 0;
   box-shadow: 0px 1px 81px 0px rgb(31 93 92 / 41%);
   padding: 15px 0;
-  z-index: 2;
+  z-index: 3;
 }
 .navbar-brand {
   color: #fff;
@@ -58,7 +58,7 @@ header {
 }
 .nav-link {
   color: #fff !important;
-  padding-left: 50px !important;
+  padding-right: 50px !important;
   transition: all 0.3s ease-in-out;
 }
 .nav-link:hover {
@@ -71,14 +71,14 @@ header {
   Hero-section section CSS
 ***********************/
 .hero-section {
-  padding: 30px 0;
+  position: relative;
+  padding: 155px 0 80px;
 }
 .Combined-Shape {
   margin-top: -3px;
 }
 .hero-section ul {
-  cursor: pointer;
-  display: inline;
+  display: inline-block;
   padding: 5px 10px;
   border-radius: 30px;
   background: linear-gradient(125.17deg, #242424 0%, #161424 100%);
@@ -100,35 +100,47 @@ header {
   position: relative;
 }
 .hero-section .getStarted{
+  cursor: pointer;
   position: absolute;
   background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
   width: 140px;
   height: 140px;
-  top: 20px;
-  right: 60px;
+  top: 4.5%;
+  right: 8%;
   border-radius: 50%;
-  padding: 3px;
-  animation: getStarted 2s ease infinite;
-  transition: all .3s;
+  padding: 1px;
+  z-index: -3;
 }
-@keyframes getStarted{
-  0%{transform: scale(1);}
-  50%{transform: scale(1.05);}
-  100%{transform: scale(1);}
+.iinner{
+  position: relative;
+  align-items: center;
+  padding: 40px 0 0 40px;
+  z-index: -1;
 }
 .hero-section .getStarted .inner{
-    background: #00040f;
-    width: 137px;
-    height: 137px;
-    border-radius: 50%;
-    align-items: center;
-    padding: 35px 0 0 40px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: #00040f;
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  animation: inner .9s ease-in-out infinite;
+  transition: all 10s;
+  z-index: -2;
 }
-.hero-section .getStarted .inner p,
-.hero-section .getStarted .inner span{
+@keyframes inner{
+  0%{transform: translate(0px);}
+  25%{transform: translateX(-1px);}
+  50%{transform: translate(-1px,-1px );}
+  75%{transform: translateY(-1px);}
+  100%{transform: translate(0px);}
+}
+.hero-section .getStarted .iinner p,
+.hero-section .getStarted .iinner span{
   font-weight: 500;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 132%;
   margin: 0;
   background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
   -webkit-background-clip: text;
@@ -136,7 +148,7 @@ header {
   background-clip: text;
   text-fill-color: transparent;
 }
-.hero-section .getStarted .inner .fa-solid{
+.hero-section .getStarted .iinner .fa-solid{
   font-size: 18px;
   line-height: 130%;
   margin: 0;
@@ -151,6 +163,7 @@ header {
   font-size: 67px;
   margin: 10px 0 0 0;
   padding: 25px 0;
+  line-height: 90px;
 }
 .hero-section h1 span {
   font-size: 67px;
@@ -162,23 +175,85 @@ header {
 }
 .hero-section .left-p {
   color: rgba(255, 255, 255, 0.7);
-  padding: 10px 0;
+  padding: 10px 170px 10px 0;
 }
-.hero-section .hero-left{
-  animation: hero 3s ease infinite;
+/* Hero left Images */
+.hero-section .hero-left-1{
+  position: absolute;
+  top: 8%;
+  right: 40%;
+  animation: circle 3s ease infinite;
   transition: all .3s;
 }
-@keyframes hero{
+.hero-section .hero-left-2{
+  position: absolute;
+  top: 12.9%;
+  right: 21.5%;
+  /* z-index: 2; */
+  animation: rectangle1 3s ease infinite;
+  transition: all .3s;
+}
+@keyframes rectangle1{
   0%{transform: translateY(0);}
-  50%{transform: translateY(10px);}
+  50%{transform: translateY(-8px);}
   100%{transform: translateY(0);}
+}
+.hero-section .hero-left-3{
+  position: absolute;
+  top: 24%;
+  right: 21.5%;
+  z-index: 1;
+  animation: rectangle2 3s ease infinite;
+  transition: all .3s;
+}
+@keyframes rectangle2{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.04);}
+  100%{transform: scale(1);}
+}
+.hero-section .hero-left-4{
+  position: absolute;
+  top: 36%;
+  right: 21.5%;
+  animation: rectangle3 3s ease infinite;
+  transition: all .3s;
+  z-index: -1;
+}
+@keyframes rectangle3{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(8px);}
+  100%{transform: translateY(0);}
+}
+.hero-section .hero-left-5{
+  position: absolute;
+  top: 59%;
+  right: 21%;
+  animation: circle 3s ease infinite;
+  transition: all .3s;
+}
+.hero-section .hero-left-6{
+  position: absolute;
+  top: 68%;
+  right: 40.6%;
+  animation: circle 3s ease infinite;
+  transition: all .3s;
+}
+@keyframes circle{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+}
+.hero-section .hero-left-7{
+  position: absolute;
+  top: 72%;
+  right: 13.2%;
 }
 
 /********************** 
   Features-1 section CSS
 ***********************/
 .features-1 {
-  padding: 35px 0 55px;
+  padding: 55px 0;
 }
 .features-1 .item {
   display: flex;
@@ -229,10 +304,9 @@ header {
   display: flex;
   align-items: center;
   width: 470px;
-  height: 115px;
   border-radius: 20px;
   margin: 0 auto;
-  padding: 20px 19px 20px 20px;
+  padding: 0px 19px 0px 20px;
   transition: all 0.3s ease-in-out;
 }
 .features-2 .item:hover {
@@ -274,6 +348,7 @@ header {
   Features-3 section CSS
 ***********************/
 .features-3 {
+  position: relative;
   background: linear-gradient(90deg,rgba(255, 255, 255, 0.247) -50.94%,#00040f 59.11%);
   padding: 160px 0;
 }
@@ -288,34 +363,34 @@ header {
 }
 .features-3 .payPal {
   position: absolute;
-  left: 511px;
-  top: 1475px;
+  left: 28%;
+  top: 9%;
   z-index: 1;
   animation: payPal 3s ease infinite;
   transition: all .3s;
 }
 @keyframes payPal{
   0%{transform: translateY(0);}
-  50%{transform: translateY(7px);}
+  50%{transform: translateY(-7px);}
   100%{transform: translateY(0);}
 }
 .features-3 .transaction {
   position: absolute;
-  left: 306px;
-  top: 1638px;
+  left: 17%;
+  top: 35%;
   animation: transaction 3s ease infinite;
   transition: all .3s;
 }
 @keyframes transaction{
   0%{transform: translateX(0);}
-  50%{transform: translateX(7px);}
+  50%{transform: translateX(-7px);}
   100%{transform: translateX(0);}
 }
 .payment-success {
   cursor: pointer;
   position: absolute;
-  left: 512px;
-  top: 1890px;
+  left: 28%;
+  top: 75%;
   width: 324px;
   background: #ffffff;
   box-shadow: 0px 10px 30px rgba(40, 48, 63, 0.25);
@@ -325,7 +400,7 @@ header {
 }
 @keyframes payment{
   0%{transform: scale(1);}
-  50%{transform: scale(1.02);}
+  50%{transform: scale(1.03);}
   100%{transform: scale(1);}
 }
 .payment-success p {
@@ -379,48 +454,44 @@ header {
 }
 .card-deal .circle-1 {
   position: absolute;
-  top: 90px;
-  /* left: 1092px; */
-  right: 429px;
+  top: 14%;
+  right: 23%;
   animation: circle-1 3s ease infinite;
   transition: all .3s;
 }
 @keyframes circle-1{
   0%{transform: scale(1);}
-  50%{transform: scale(1.02);}
+  50%{transform: scale(1.03);}
   100%{transform: scale(1);}
 }
 .card-deal .circle-2 {
   position: absolute;
-  top: 155px;
-  /* left: 1154px; */
-  right: 494px;
+  top: 25%;
+  right: 26.3%;
   animation: circle-2 3s ease infinite;
   transition: all .3s;
 }
 @keyframes circle-2{
   0%{transform: scale(1);}
-  50%{transform: scale(1.02);}
+  50%{transform: scale(1.03);}
   100%{transform: scale(1);}
 }
 .card-deal .circle-3 {
   position: absolute;
-  top: 221px;
-  /* left: 1220.3px; */
-  right: 557.7px;
+  top: 35.5%;
+  right: 29.7%;
   animation: circle-3 3s ease infinite;
   transition: all .3s;
 }
 @keyframes circle-3{
   0%{transform: scale(1);}
-  50%{transform: scale(1.02);}
+  50%{transform: scale(1.04);}
   100%{transform: scale(1);}
 }
 .card-deal .scanCradit {
   position: absolute;
-  /* left: 1026px; */
-  right: 686px;
-  top: 170px;
+  right: 37%;
+  top: 25%;
   animation: scanCradit 3s ease infinite;
   transition: all .3s;
 }
@@ -431,9 +502,8 @@ header {
 }
 .card-deal .onlineAnalysis {
   position: absolute;
-  /* left: 1285px; */
-  right: 362px;
-  top: 127px;
+  right: 18%;
+  top: 13%;
   animation: onlineAnalysis 3s ease infinite;
   transition: all .3s;
 }
@@ -444,9 +514,8 @@ header {
 }
 .card-deal .payMethod {
   position: absolute;
-  /* left: 1125px; */
-  right: 516px;
-  top: 399px;
+  right: 26%;
+  top: 64%;
   animation: payMethod 3s ease infinite;
   transition: all .3s;
 }
@@ -552,6 +621,13 @@ header {
   cursor: pointer;
   display: block;
   margin: auto;
+  animation: brand 2.5s ease infinite;
+  transition: all 0.3s;
+}
+@keyframes brand{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.03);}
+  100%{transform: scale(1);}
 }
 
 /********************** 
@@ -686,17 +762,25 @@ footer .footer-bottom .social-icons ul li i:hover {
 @media (min-width: 320px) and (max-width: 576px) {
 
   header {padding: 10px 0;}
+  .navbar-brand {padding-left: 10px;}
 
   .navbar-toggler{background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#def9fa 0.89%,#bef3f5 17.23%,#9dedf0 42.04%,#7de7eb 55.12%,#5ce1e6 71.54%,#33bbcf 100%); -webkit-text-fill-color: transparent;}
   .navbar-nav{margin: 20px 0;}
-  .nav-link {text-align: center; padding-left: 0 !important;}
+  .nav-link {text-align: center; padding-right: 0 !important;}
 
-  .hero-section h1 {font-size: 38px;margin: -114px 0 0 0;text-align: left;line-height: 58px;padding: 50px 100px 0 10px;}
+  .hero-section h1 {font-size: 38px; margin: -114px 0 0 0; text-align: left; line-height: 58px; padding: 0 140px 0 10px;}
   .hero-section h1 span {font-size: 40px;}
-  .hero-section{text-align: center; padding: 50px 0;}
+  .hero-section{height: 1150px; text-align: center; padding: 50px 0;}
   .hero-section .left-p {font-size: 16px; padding: 10px 10px 30px; text-align: left;}
-  .hero-section .getStarted {position: relative;top: 37px;left: 63%;}
-  .hero-section .getStarted .inner {padding: 42px 0 0 0px;}
+  .hero-section .getStarted {position: relative;top: 116px;left: 62%;}
+  .hero-section .getStarted .iinner {padding: 40px 0 0 0px;}
+  .hero-section .hero-left-1{top: 48%;left: 9%;}
+  .hero-section .hero-left-2{width: 90%;top: 55%;left: 50%;margin-left: -168.75px;}
+  .hero-section .hero-left-3{width: 90%;top: 61.5%;left: 50%;margin-left: -168.75px;}
+  .hero-section .hero-left-4{width: 90%;top: 67.5%;left: 50%;margin-left: -168.75px;}
+  .hero-section .hero-left-5{top: 80.6%;right: 5%;}
+  .hero-section .hero-left-6{top: 84%;left: 3%;}
+  .hero-section .hero-left-7{width: 94%;top: 86%;left: 50%;margin-left: -172.5px;z-index: -1;}
 
   .features-1 .item {align-items: center; flex-direction: column;}
   .features-1 .text p {padding-bottom: 25px; padding-left: 0;}
@@ -704,30 +788,30 @@ footer .footer-bottom .social-icons ul li i:hover {
   .features-1 {padding: 30px 0;}
 
   .features-2 {padding: 70px 0;}
-  .features-2 h2 {font-size: 32px; padding: 20px; text-align: center;}
+  .features-2 h2 {font-size: 32px; padding: 20px 0; text-align: center;}
   .features-2 .left-p {padding: 0 25px 25px; text-align: center;}
   .features-2 .icon .fa-solid {padding-left: 16px;}
-  .features-2 .item {width: auto; height: 130px; margin: 35px auto 0;}
-  .features-2 .btn-getStarted {display: block; margin: 0 auto 25px;}
+  .features-2 .item {width: auto; margin: 25px auto 0;}
+  .features-2 .btn-getStarted {display: block; margin: 0 auto 40px;}
 
-  .features-3 {padding: 70px 0;}
-  .features-3 .payPal {position: relative; top: 0;left: 0%; transform: translateX(-50%);}
-  .features-3 .transaction {position: relative; top: 0; left: 0%; transform: translateX(-50%);}
+  .features-3 {padding: 35px 0 70px;}
+  .features-3 .payPal {position: relative; top: 6.5%; left: 50%; margin-left: -135px; transform: translateX(-50%);}
+  .features-3 .transaction {position: relative; top: -10px; left: 0%; transform: translateX(-50%);}
   .features-3 h2 {font-size: 32px; padding: 18px;}
   .features-3 .left-p {padding: 0 20px 25px;}
-  .payment-success {position: relative; top: 35px; left: 0%; transform: translateX(-50%);}
+  .payment-success {position: relative; top: 35px; left: 50%; transform: translateX(-50%); animation: none;}
   .right-content {padding-left: 0; padding-top: 100px; text-align: center;}
   .downloadStores{text-align: center;}
   
   .card-deal {padding: 70px 0 0 0; text-align: center;}
   .card-deal h2 {font-size: 32px; padding-top: 0; padding: 20px;}
   .card-deal .left-p {padding: 0 25px 25px;}
-  .card-deal .circle-1 {position: relative; top: 162px; left: 0%; transform: translateX(-50%);}
-  .card-deal .circle-2 {position: relative; top: -153px; left: 0%; transform: translateX(-73%);}
+  .card-deal .circle-1 {position: relative; top: 21%; left: 0%;}
+  .card-deal .circle-2 {position: relative; top: -16%; left: 0%; }
   .card-deal .circle-3 {display: none;}
-  .card-deal .scanCradit {position: relative; top: -560px; left: 0%; transform: translateX(-25%);}
-  .card-deal .onlineAnalysis {position: relative; top: -316px; left: 0%; transform: translateX(-50%);}
-  .card-deal .payMethod {position: relative; top: -746px; left: 0%; transform: translateX(-50%);}
+  .card-deal .scanCradit {position: relative; top: -69%; left: 0%; transform: translateX(-25%);}
+  .card-deal .onlineAnalysis {position: relative; top: -37.8%; left: 0%; transform: translateX(-50%);}
+  .card-deal .payMethod {position: relative; top: -92%; left: 0%; transform: translateX(-50%);}
   .jhamela{height: 810px;}
 
   .about-us {padding: 50px 0 40px; text-align: center;}
@@ -753,7 +837,7 @@ footer .footer-bottom .social-icons ul li i:hover {
   footer .col-lg-2 ul li a {line-height: 30px;}
   footer h5 {margin-bottom: 12px;}
 
-  @keyframes transaction{0%{transform: translateY(0);}50%{transform: translateY(-7px);}100%{transform: translateY(0);}}
+  @keyframes transaction{0%{transform: translateY(0);}50%{transform: translateY(7px);}100%{transform: translateY(0);}}
   @keyframes scanCradit{0%{transform: translateY(0);}50%{transform: translateY(7px);}100%{transform: translateY(0);}}
   @keyframes payMethod{0%{transform: scale(1);}50%{transform: scale(1.02);}100%{transform: scale(1);}}
   @keyframes onlineAnalysis{0%{transform: translateY(0);}50%{transform: translateY(-7px);}100%{transform: translateY(0);}}
